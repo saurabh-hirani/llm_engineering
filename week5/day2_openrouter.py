@@ -29,18 +29,17 @@ def main():
     load_dotenv(override=True)
 
     # Setup OpenRouter client
-    openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
-    if openrouter_api_key:
-        print(f"OpenRouter API Key exists and begins {openrouter_api_key[:8]}")
-        client = OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=openrouter_api_key,
-        )
-    else:
-        print("OpenRouter API Key not set")
-        return
-
-    print(f"Using model: {MODEL}")
+    # openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
+    # if openrouter_api_key:
+    #     print(f"OpenRouter API Key exists and begins {openrouter_api_key[:8]}")
+    #     client = OpenAI(
+    #         base_url="https://openrouter.ai/api/v1",
+    #         api_key=openrouter_api_key,
+    #     )
+    # else:
+    #     print("OpenRouter API Key not set")
+    #     return
+    # print(f"Using model: {MODEL}")
 
     # PART A: Analyze document size
     print("\n=== PART A: Document Analysis ===")
